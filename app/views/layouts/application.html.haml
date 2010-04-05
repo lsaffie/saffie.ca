@@ -1,0 +1,21 @@
+!!! XML
+!!! strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"} 
+  %head
+    %title                 
+      =yield :title 
+    =stylesheet_link_tag 'style'
+  %body
+    #container
+      #header{:class => 'rounded'}
+        =render :partial => 'layouts/header.html.haml'
+        -if current_user
+          =render :partial => 'layouts/admin_menu.html.haml'
+
+      #container2
+        #main_content
+          =yield
+        #right_content
+          =render :partial => 'layouts/right_content.html.haml'
+      #footer{:class => 'rounded'}
+        =render :partial => 'layouts/footer.html.haml'

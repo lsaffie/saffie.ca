@@ -1,0 +1,3 @@
+-form_for(@tag) do |f|
+  =render :partial => "tag.html.haml", :locals => {:f => f}
+  =submit_tag "new"

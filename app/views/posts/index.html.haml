@@ -1,0 +1,8 @@
+-@posts.each do |post|
+  #title
+    =link_to post.title, post_path(post)
+  #date
+    =post.created_at.strftime("%b %d, %Y")
+  %hr
+  #post_body
+    =post.body
