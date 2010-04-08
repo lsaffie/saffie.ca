@@ -12,11 +12,10 @@
         -if current_user
           =render :partial => 'layouts/admin_menu.html.haml'
 
-      #faux_container
-        #main_content
-          =yield
-        #right_content
-          =render :partial => 'layouts/right_content.html.haml'
+      #main_content{:class => 'rounded'}
+        =yield
+      #right_content{:class => 'rounded'}
+        =render :partial => 'layouts/right_content.html.haml'
       #footer{:class => 'rounded'}
         =render :partial => 'layouts/footer.html.haml'
       =google_analytics_js
