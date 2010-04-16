@@ -5,4 +5,4 @@
     =post.created_at.strftime("%b %d, %Y")
   %hr
   #post_body
-    =post.body
+    =RedCloth.new(post.body).to_html
