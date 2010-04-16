@@ -1,4 +1,2 @@
-config/database.yml
-db/*
-log/*
-public/stylesheets/style.css
+log/*.log
+public/stylesheets/*.css
