@@ -625,3 +625,192 @@ Processing PostsController#show (for 127.0.0.1 at 2010-10-08 15:02:38) [GET]
 Rendering template within layouts/application
 Rendering posts/show
 Completed in 27ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/posts/3]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:49:38) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 43ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-10-09 22:49:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-10-09 22:49:53) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"lKYsCgI+R+ucXetDzTCX5agSar5RaY6pM8yIZ1AnIzQ=", "login"=>"lsaffie", "password"=>"1702lsaffie"}
+Redirected to http://127.0.0.1:3000/
+Completed in 6ms (DB: 2) | 302 Found [http://127.0.0.1/session]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-09 22:49:53) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:49:56) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-10-09 22:50:02) [DELETE]
+  Parameters: {"post_id"=>"2", "authenticity_token"=>"lKYsCgI+R+ucXetDzTCX5agSar5RaY6pM8yIZ1AnIzQ=", "id"=>"21", "_"=>""}
+Completed in 51ms (View: 1, DB: 46) | 200 OK [http://127.0.0.1/posts/2/comments/21]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-09 22:50:21) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 62ms (View: 56, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:50:27) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-10-09 22:51:10) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-10-09 22:51:16) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s=", "login"=>"lsaffie", "password"=>"1702lsaffie"}
+Redirected to http://127.0.0.1:3000/
+Completed in 8ms (DB: 3) | 302 Found [http://127.0.0.1/session]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-09 22:51:16) [GET]
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:51:22) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-10-09 22:51:25) [DELETE]
+  Parameters: {"post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s=", "id"=>"20"}
+Completed in 27ms (View: 1, DB: 24) | 200 OK [http://127.0.0.1/posts/2/comments/20]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:52:29) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-10-09 22:52:34) [POST]
+  Parameters: {"comment"=>{"name"=>"lkj", "body"=>"lkj"}, "commit"=>"Post!", "post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s="}
+Redirected to http://127.0.0.1:3000/posts/2
+Completed in 8ms (DB: 2) | 302 Found [http://127.0.0.1/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:52:34) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-10-09 22:52:38) [DELETE]
+  Parameters: {"post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s=", "id"=>"22"}
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/posts/2/comments/22]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:53:22) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-10-09 22:53:27) [POST]
+  Parameters: {"comment"=>{"name"=>"l", "body"=>"lkj\r\n"}, "commit"=>"Post!", "post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s="}
+Redirected to http://127.0.0.1:3000/posts/2
+Completed in 10ms (DB: 3) | 302 Found [http://127.0.0.1/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:53:27) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-10-09 22:53:36) [DELETE]
+  Parameters: {"post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s=", "id"=>"23"}
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/posts/2/comments/23]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:55:54) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-10-09 22:56:00) [POST]
+  Parameters: {"comment"=>{"name"=>"one", "body"=>"one"}, "commit"=>"Post!", "post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s="}
+Redirected to http://127.0.0.1:3000/posts/2
+Completed in 8ms (DB: 2) | 302 Found [http://127.0.0.1/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:56:00) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-10-09 22:56:06) [DELETE]
+  Parameters: {"post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s=", "id"=>"24"}
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/posts/2/comments/24]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:56:47) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-10-09 22:56:52) [POST]
+  Parameters: {"comment"=>{"name"=>"lkj", "body"=>"lkj"}, "commit"=>"Post!", "post_id"=>"2", "authenticity_token"=>"OHnzKwMEqTueh4JPX3fT9y624s/ZY7gEQBhKg+nEl/s="}
+Redirected to http://127.0.0.1:3000/posts/2
+Completed in 8ms (DB: 3) | 302 Found [http://127.0.0.1/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:56:52) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:57:24) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-10-09 22:57:26) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/posts/2]
