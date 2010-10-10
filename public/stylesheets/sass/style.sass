@@ -2,18 +2,19 @@
   :font
     :size 9pt
     :family Verdana
+    :color red
 
 body 
   :text-align center
-  :background #E5E5E5
+  :background #f1f1f1
   :padding 0
   :margin 0
 
 hr
   :clear both
   :margin-top 1%
-  :color #804204
-  :background-color #804204
+  :color #F1F1F1
+  :background-color #F1F1F1
   :border none
   :height 1px
 
@@ -24,25 +25,20 @@ hr
   :padding-top 3px
   
 #header
-  :background #046380
+  :background #9FB4CC
   :margin-bottom 2px
   :padding 1%
   :height 100px
 
 #main_content
   :float left
-  :padding 20px
-  :width 693px
-  :background #FFFFFF
-  :margin-bottom 5px
 
 #right_content
   :float left
   :padding 10px
-  :text-align center
-  :width 221px 
-  :background #BFBFBF
+  :width 217px 
   :margin-left 5px
+  :border 2px solid #FFFFFF
   p
     :font
       :size 8pt
@@ -50,6 +46,13 @@ hr
 .rounded
   :-moz-border-radius 5px
   :-webkit-border-radius 5px
+
+.content
+  :padding 20px
+  :width 693px
+  :background #FFFFFF
+  :margin-bottom 5px
+
 .rounded-left
   :-moz-border-radius-topleft 5px
   :-moz-border-radius-bottomleft 5px
@@ -73,12 +76,13 @@ hr
 #title
   :font 
     :size 15pt
-  :color #804204
+  :color #DB4105
   :float left
+  :padding-bottom 4px
   a
     :font 
-      :size 15pt
-    :color #804204
+      :size 17pt
+    :color #DB5224
     :text-decoration none
 
   :hover
@@ -89,7 +93,7 @@ hr
     :family Helvetica
     :size 10pt
   :text-align right
-  :color #804204
+  :color #DB4105
 
 #post_body
   :clear both
@@ -100,8 +104,10 @@ hr
 #header_title
   :text-align center
   a
+    :position relative
+    :top 30px
     :font
-      :size 25pt
+      :size 17pt
       :family Verdana
     :color #FFFFFF
     :text-decoration none
@@ -116,3 +122,25 @@ hr
 
 #float_right
   :float right
+
+.comment
+  :width 100%
+  :border-bottom 1px solid #F1F1F1
+
+.bold
+  :font-weight bold
+
+.comment_date
+  :width 25%
+
+.right_floated
+  :float right
+
+.date
+  :font-size 10px
+
+.margin_padding_5px
+  :margin 5px
+  :padding 5px
+.clear_both
+  :clear both

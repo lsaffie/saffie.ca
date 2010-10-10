@@ -4,6 +4,7 @@
   %head
     %title                 
       =yield :title 
+    =javascript_include_tag :defaults
     =stylesheet_link_tag 'style'
   %body
     #container
@@ -12,7 +13,7 @@
         -if current_user
           =render :partial => 'layouts/admin_menu.html.haml'
 
-      #main_content{:class => 'rounded'}
+      #main_content
         =yield
       #right_content{:class => 'rounded'}
         =render :partial => 'layouts/right_content.html.haml'

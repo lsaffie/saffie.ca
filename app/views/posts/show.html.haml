@@ -1,11 +1,17 @@
-#title
-  =@post.title
-#date
-  =@post.created_at.strftime("%b %d, %Y")
-%hr
-#post_body
-  =RedCloth.new(@post.body).to_html
+.rounded.content
+  #title
+    =@post.title
+  #date
+    =@post.created_at.strftime("%b %d, %Y")
+  %hr
+  #post_body
+    =RedCloth.new(@post.body).to_html
 
--if current_user
-  =link_to "Edit", edit_post_path(@post)
-  =link_to "Delete", post_path(@post), :method => :delete
+  -if current_user
+    =link_to "Edit", edit_post_path(@post)
+    =link_to "Delete", post_path(@post), :method => :delete
+
+.rounded.content
+  #comments
+    =render :partial => 'comments/index.html.haml'
+    =render :partial => 'comments/comment.html.haml'

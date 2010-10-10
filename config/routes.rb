@@ -8,8 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   map.resources :tags
-  map.resources :posts
-
+  map.resources :posts, :has_many => :comments
 
 
   map.connect '', :controller => 'posts', :action => 'index'

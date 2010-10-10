@@ -1,0 +1,16 @@
+.margin_padding_5px
+  Post a comment
+  -form_for([@post,@comment]) do |f| 
+    %table
+      %tr
+        %td
+          =f.label :name
+        %td
+          =f.text_field :name
+      %tr
+        %td
+        %td
+          =f.text_area :body, :size => '40x5'
+      %tr
+        %td
+          =submit_tag 'Post!'

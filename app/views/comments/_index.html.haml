@@ -1,0 +1,16 @@
+#title
+  Comments
+.clear_both
+-@comments.each do |comment|
+  %table{:class => 'comment margin_padding_5px'}
+    %tr{:id => "comment comment_#{comment.id}"}
+      %td{:class => "comment_date"}
+        .bold
+          =comment.name
+        .date
+          =comment.created_at.strftime("%b %d,%Y")
+      %td{:class => "comment_body"} 
+        =comment.body
+        -if current_user
+          .right_floated
+            =link_to_remote 'delete', :url => post_comment_path(@post,comment), :confirm => 'You sure?', :method => :delete

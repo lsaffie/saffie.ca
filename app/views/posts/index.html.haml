@@ -1,8 +1,9 @@
--@posts.each do |post|
-  #title
-    =link_to post.title, post_path(post)
-  #date
-    =post.created_at.strftime("%b %d, %Y")
-  %hr
-  #post_body
-    =RedCloth.new(post.body).to_html
+.rounded.content
+  -@posts.each do |post|
+    #title
+      =link_to post.title, post_path(post)
+    #date
+      =post.created_at.strftime("%b %d, %Y")
+    %hr
+    #post_body
+      =truncate(RedCloth.new(post.body).to_html, 500, link_to("...(more)", post) )
