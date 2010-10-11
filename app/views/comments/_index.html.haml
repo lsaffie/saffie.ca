@@ -3,7 +3,7 @@
 .clear_both
 -@comments.each do |comment|
   %table{:class => 'comment margin_padding_5px'}
-    %tr{:id => "comment comment_#{comment.id}"}
+    %tr{:id => "comment_#{comment.id}"}
       %td{:class => "comment_date"}
         .bold
           =comment.name
