@@ -2,6 +2,8 @@ class PostsController < ApplicationController
 
   before_filter :login_required, :except => [:index, :show]
 
+  require 'RedCloth'
+
   def index
     @posts = Post.find(:all, :order => "created_at DESC")
   end
