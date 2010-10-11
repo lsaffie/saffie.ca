@@ -1,4 +1,4 @@
 source :gemcutter
-gem 'redcloth'
+gem 'RedCloth'
 gem 'will_paginate'
 gem 'pony'
