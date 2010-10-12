@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     comment = Comment.new(params[:comment])
     if @post.comments << comment
-      Pony.mail(:to => 'luis.saffie@gmail.com', :from => 'comments@saffie.ca', :subject => 'Comment', :body => "#{comment.body} #{post_comment_path(@post, comment)}")
+      Pony.mail(:to => 'luis.saffie@gmail.com', :from => 'comments@saffie.ca', :subject => 'Comment', :body => "#{comment.body} www.saffie.ca/#{post_comment_path(@post, comment)}")
       redirect_to @post
     end
   end
