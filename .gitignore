@@ -2,4 +2,6 @@ log/*.log
 public/stylesheets/*.css
 config/database.yml
 .bundle
-tmp
+*.tmp
+*.swo
+*.swp
