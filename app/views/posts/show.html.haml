@@ -1,11 +1,10 @@
 .rounded.content
   #title
     =@post.title
-  #date
+  .date
     =@post.created_at.strftime("%b %d, %Y")
-  %hr
   #post_body
-    =RedCloth.new(@post.body).to_html
+    =raw RedCloth.new(@post.body).to_html
 
   -if current_user
     =link_to "Edit", edit_post_path(@post)
