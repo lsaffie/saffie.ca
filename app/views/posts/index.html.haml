@@ -1,9 +1,9 @@
-.rounded.content
+.content
   -@posts.each do |post|
     .post
       #title
         =link_to post.title, post_path(post)
-      %p.date
+      .date
         =post.created_at.strftime("%b %d, %Y")
       #post_body
-        =truncate(post.body, :length => 500)
+        =truncate RedCloth.new(post.body), :length => 260
