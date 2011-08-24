@@ -11,10 +11,10 @@ set :repository,  "git@github.com:lsaffie/saffie.ca.git"
 
 set :scm, :git
 
-role :web, "saffie.ca"
-role :app, "saffie.ca"
-role :db,  "saffie.ca", :primary => true
-role :db,  "saffie.ca"
+role :web, "www.saffie.ca"
+role :app, "www.saffie.ca"
+role :db,  "www.saffie.ca", :primary => true
+role :db,  "www.saffie.ca"
 
 set :user, "deploy"
 set :use_sudo, false
