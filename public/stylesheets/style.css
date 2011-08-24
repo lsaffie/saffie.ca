@@ -30,26 +30,32 @@ hr {
   height: 100px; }
 
 #main_content {
-  float: left; }
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5px; }
+
+#left_content {
+  float: left;
+  width: 75%;
+  background: white;
+  padding: 5px;
+  padding-bottom: 500em;
+  margin-bottom: -500em;
+  margin-right: -1px; }
 
 #right_content {
-  float: left;
+  float: right;
   padding: 10px;
-  width: 217px;
-  margin-left: 5px;
-  border: 2px solid white; }
+  width: 21%;
+  background: white;
+  padding-bottom: 500em;
+  margin-bottom: -500em; }
   #right_content p {
     font-size: 8pt; }
 
 .rounded {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-
-.content {
-  padding: 20px;
-  width: 693px;
-  background: white;
-  margin-bottom: 5px; }
 
 .rounded-left {
   -moz-border-radius-topleft: 5px;

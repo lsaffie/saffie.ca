@@ -1,9 +1,9 @@
 !!! XML
 !!! strict
-%html{:xmlns => "http://www.w3.org/1999/xhtml"} 
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %title                 
-      =yield :title 
+    %title
+      =yield :title
     =javascript_include_tag :defaults
     =stylesheet_link_tag 'style'
   %body
@@ -19,7 +19,7 @@
 
       #main_content
         =yield
-    #right_content{:class => 'rounded'}
-      =render :partial => 'layouts/right_content.html.haml'
-    #footer{:class => 'rounded'}
-      =render :partial => 'layouts/footer.html.haml'
+        #right_content{:class => 'rounded'}
+          =render :partial => 'layouts/right_content.html.haml'
+      #footer{:class => 'rounded'}
+        =render :partial => 'layouts/footer.html.haml'
