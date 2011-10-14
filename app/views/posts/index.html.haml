@@ -3,7 +3,9 @@
     .post
       #title
         =link_to post.title, post
-      .date
+      .subtitle
         =post.created_at.strftime("%b %d, %Y")
       #post_body
         =truncate RedCloth.new(post.body), :length => 260
+      .subtitle
+        =pluralize(post.comments.count, 'comment')
