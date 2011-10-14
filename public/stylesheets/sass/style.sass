@@ -1,14 +1,25 @@
 *
   :font
     :size 9pt
-    :family Verdana
+    :family Verdana, sans-serif
     :color #222222
 
-body 
+h1, h2, h3
+  :font-family "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif
+  :text-shadow 0 1px 1px black
+
+body
   :text-align center
-  :background #f1f1f1
+  :background #355664
   :padding 0
   :margin 0
+
+.line
+  :height 1px
+  :background-color #24404c
+  :border-bottom 1px solid #416371
+  :margin 1em 0
+  :overflow hidden
 
 hr
   :clear both
@@ -25,35 +36,34 @@ hr
   :padding-top 3px
 
 #header
-  :background #9FB4CC
   :margin-bottom 2px
-  :padding 1%
-  :height 100px
+  :padding 1% 0
 
 #main_content
   :overflow hidden
   :width 100%
   :margin-top 5px
 
-#left_content
+#left-content
   :float left
   :width 75%
-  :background white
-  :padding 5px
   :padding-bottom 500em
   :margin-bottom -500em
   :margin-right -1px
 
 #right_content
   :float right
-  :padding 10px
-  :width 21%
+  :width 23%
   :background white
+  :padding 5px
   :padding-bottom 500em
   :margin-bottom -500em
   p
     :font
       :size 8pt
+  img
+    :display block
+    :margin 0 auto
 
 .rounded
   :-moz-border-radius 5px
@@ -90,23 +100,29 @@ hr
     :color #496664
     :text-decoration none
 
-  :hover
-    :text-decoration underline
+  &:hover
+    a
+      :color #2E4740
 
 #post_body
   :clear both
   :color #111
 
 #header_title
-  :text-align center
+  :text-align left
+  :text-transform uppercase
+  :font-size 3.5em
   a
     :position relative
-    :top 30px
     :font
-      :size 17pt
+      :size 3em
       :family Verdana
     :color #FFFFFF
     :text-decoration none
+
+#second-header
+  :font-size 1.5em
+  :color white
 
 #menu
   :background #333333
@@ -147,9 +163,10 @@ hr
 .post
   :border 1px solid #E0E0E0
   :padding 5px
-  :margin-bottom 5px
+  :margin-bottom 15px
   :-moz-border-radius 5px
   :-webkit-border-radius 5px
+  :background white
 
 #comment_body
   :border 1px solid #C0C0C0
