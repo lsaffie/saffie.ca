@@ -7,5 +7,8 @@
         =post.created_at.strftime("%b %d, %Y")
       #post_body
         =truncate RedCloth.new(post.body), :length => 260
-      .subtitle
+      .comments-count
         =pluralize(post.comments.count, 'comment')
+
+  #second-header
+    =will_paginate @posts
