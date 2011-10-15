@@ -4,6 +4,11 @@
     :family Verdana, sans-serif
     :color #222222
 
+a
+  &:visited
+    :color white
+
+
 h1, h2, h3
   :font-family "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif
   :text-shadow 0 1px 1px black
@@ -56,8 +61,7 @@ hr
   :width 23%
   :background white
   :padding 5px
-  :padding-bottom 500em
-  :margin-bottom -500em
+  :height 810px
   p
     :font
       :size 8pt
@@ -150,12 +154,12 @@ hr
   :color gray
 
 .comments-count
+  :position absolute
+  :bottom 2px
   :font-size 10px
   :margin 5px 0
   :padding 0
   :color gray
-  :position static
-  :bottom 0
 
 .margin_padding_5px
   :margin 5px
@@ -167,6 +171,7 @@ hr
   :background #111111
   :color #FFFFFF
 .post
+  :position relative
   :border 1px solid #E0E0E0
   :padding 5px
   :margin-bottom 15px
