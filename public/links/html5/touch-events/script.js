@@ -22,6 +22,7 @@ function new_circle() {
   var canvas = document.createElement('canvas');
   document.body.appendChild(canvas);
   make_circle(canvas, "green");
+  move(canvas);
 }
 
 window.onload = function() {
