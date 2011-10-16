@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Touch Events </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <script type="text/javascript">
+
+      var obj = document.getElementById('id');
+      obj.addEventListener('touchmove', function(event) {
+        if (event.targetTouches.length == 1) {
+          var touch = event.targetTouches[0];
+          obj.style.left = touch.pageX + 'px';
+          obj.style.top = touch.pageY + 'px';
+        }
+      }, false);
+    </script>
+  </head>
+
+  <body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+  </body>
+</html>
