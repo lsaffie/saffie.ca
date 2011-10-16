@@ -6,7 +6,7 @@
 
     <script type="text/javascript">
 
-      var obj = document.getElementById('canvas');
+      var obj = document.getElementById('dom-div');
       obj.addEventListener('touchmove', function(event) {
         if (event.targetTouches.length == 1) {
           var touch = event.targetTouches[0];
@@ -18,8 +18,7 @@
   </head>
 
   <body>
-    <canvas id="canvas" width="300" height="300" style="top:0px; left:0px; width: 300px; height: 300px;"></canvas>
-    <object id="tuio" type="application/x-tuio">Plugin FAILED to load</object>
+    <div id="dom-div"> MOVE ME </div>
 
   </body>
 </html>
