@@ -6,6 +6,17 @@
     <script>
       window.onload = function() {
         var obj = document.getElementById('canvas-touch');
+
+        var context = obj.getContext("2d");
+        var centerX = 228;
+        var centerY = 100;
+        var radius = 50;
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = "red";
+        context.fill();
+
         obj.addEventListener('touchmove', function(event) {
             // If there's exactly one finger inside this element
             if (event.targetTouches.length == 1) {
@@ -20,7 +31,7 @@
   </head>
 
   <body>
-    <canvas id="canvas-touch" width="300" height="300" style="background: yellow; position: relative;">
+    <canvas id="canvas-touch">
     <strong> [Your browser cannot show this example.]</strong>
     </canvas>
 
