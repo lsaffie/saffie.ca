@@ -13,9 +13,6 @@
         var radius = 50;
 
         context.beginPath();
-        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-        context.fillStyle = "red";
-        context.fill();
 
         obj.addEventListener('touchmove', function(event) {
             // If there's exactly one finger inside this element
@@ -26,6 +23,9 @@
             obj.style.top = touch.pageY + 'px';
             }
           }, false);
+        context.arc(obj.style.left, obj.style.top, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = "red";
+        context.fill();
         }
     </script>
   </head>
