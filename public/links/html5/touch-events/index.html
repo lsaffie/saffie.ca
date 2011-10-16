@@ -2,11 +2,9 @@
 <html>
   <head>
     <title> Touch Events </title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <script type="text/javascript">
-
-      var obj = document.getElementById('id');
+      var obj = document.getElementById('canvastouch');
       obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
           if (event.targetTouches.length == 1) {
@@ -20,7 +18,9 @@
   </head>
 
   <body>
-    <div id="dom-div"> MOVE ME </div>
+    <cavas id="canvastouch" width="300" height="300" style="background: yellow; position: relative;">
+    <strong> [Your browser cannot show this example.]</strong>
+    </canvas>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   </body>
