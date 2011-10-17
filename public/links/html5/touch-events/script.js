@@ -20,6 +20,7 @@ function make_circle(canvas, color) {
 
 function new_circle() {
   var canvas = document.createElement('canvas');
+  canvas.style.position = 'relative';
   document.body.appendChild(canvas);
   make_circle(canvas, "green");
   move(canvas);
