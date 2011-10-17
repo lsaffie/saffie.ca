@@ -13,7 +13,7 @@ function move(obj) {
 function make_circle(canvas, color) {
   var ctx = canvas.getContext('2d');
   ctx.beginPath();
-  ctx.arc(100,100,50,0,2*Math.PI, false);
+  ctx.arc(100,100,25,0,2*Math.PI, false);
   ctx.fillStyle = color;
   ctx.fill();
 }
@@ -21,6 +21,8 @@ function make_circle(canvas, color) {
 function new_circle() {
   var canvas = document.createElement('canvas');
   canvas.style.position = 'relative';
+  canvas.width="150";
+  canvas.height="150";
   document.body.appendChild(canvas);
   make_circle(canvas, "green");
   move(canvas);
@@ -29,12 +31,6 @@ function new_circle() {
 window.onload = function() {
   var obj1= document.getElementById('canvas-touch1');
   make_circle(obj1, "red");
-  var obj2= document.getElementById('canvas-touch2');
-  make_circle(obj2,"yellow");
-  var obj3= document.getElementById('canvas-touch3');
-  make_circle(obj3, "blue");
   move(obj1);
-  move(obj2);
-  move(obj3);
 }
 
