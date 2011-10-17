@@ -21,8 +21,8 @@ function make_circle(canvas, color) {
 function new_circle() {
   var canvas = document.createElement('canvas');
   canvas.style.position = 'relative';
-  canvas.width="150";
-  canvas.height="150";
+  canvas.width="130";
+  canvas.height="130";
   document.body.appendChild(canvas);
   make_circle(canvas, "green");
   move(canvas);
