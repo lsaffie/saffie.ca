@@ -13,4 +13,4 @@
         =comment.body
         -if current_user
           .right_floated
-            =link_to_remote 'delete', :url => post_comment_path(@post,comment), :confirm => 'You sure?', :method => :delete
+            =link_to 'delete', post_comment_path(@post,comment), :confirm => 'You sure?', :method => :delete
