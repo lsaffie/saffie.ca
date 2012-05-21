@@ -7,11 +7,14 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    comment = Comment.new(params[:comment])
-    if @post.comments << comment
-      Pony.mail(:to => 'luis.saffie@gmail.com', :from => 'comments@saffie.ca', :subject => 'Comment', :body => "#{comment.body} www.saffie.ca/#{post_comment_path(@post, comment)}")
-      redirect_to @post
+    comment_params = params[:comment]
+    if comment_params["bot_check"].empty?
+      comment = Comment.new(comment_params)
+      if @post.comments << comment
+        Pony.mail(:to => 'luis.saffie@gmail.com', :from => 'comments@saffie.ca', :subject => 'Comment', :body => "#{comment.body} www.saffie.ca/#{post_comment_path(@post, comment)}")
+      end
     end
+    redirect_to @post
   end
 
   def destroy
