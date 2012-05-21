@@ -4,4 +4,8 @@ log/*.log
 tmp/
 *.swp
 public/stylesheets/*.css
+mysql2psql.yml
+saffiepg.dump
+config/database.yml
+saffie.mysql
 
