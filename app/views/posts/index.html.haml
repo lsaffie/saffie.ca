@@ -10,5 +10,6 @@
       .comments-count
         =pluralize(post.comments.count, 'comment')
 
-  #second-header
-    =will_paginate @posts
+#right_content{:class => 'rounded'}
+  =render :partial => 'layouts/right_content.html.haml'
+
