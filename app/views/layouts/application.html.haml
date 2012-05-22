@@ -20,7 +20,7 @@
       #main_content
         =yield
       -if @posts
-        .pagination
+        .digg_pagination
           =will_paginate(@posts)
       #footer
         =render :partial => 'layouts/footer.html.haml'
