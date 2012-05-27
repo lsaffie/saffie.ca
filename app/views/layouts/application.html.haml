@@ -6,6 +6,7 @@
       =yield :title
     =javascript_include_tag :defaults
     =stylesheet_link_tag 'style'
+    %meta{:name => "google-site-verification", :content => "BGlcBbBgep6dkNPO25kRTfY31WdYUk1C-eoClXuG3sI"}
   %body
     -if user_signed_in?
       =render :partial => 'layouts/admin_menu.html.haml'
