@@ -5,8 +5,11 @@
         =link_to post.title, post
       .subtitle
         =post.created_at.strftime("%b %d, %Y")
+        -if current_user
+          =link_to "Edit", edit_post_path(post)
+          =button_to "Delete", post, :method => :delete
       #post_body
-        =truncate RedCloth.new(post.body), :length => 260
+        =truncate RedCloth.new(post.body), :length => 100
       .comments-count
         =pluralize(post.comments.count, 'comment')
 

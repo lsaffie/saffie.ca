@@ -1,8 +1,4 @@
 #menu
-  %ul
-    %li
-      =link_to "New Post", new_post_path
-    %li
-      =link_to "New Tag", new_tag_path
-    %li
-      =link_to "logout", destroy_user_session_path, :method => :delete
+  =link_to "New Post", new_post_path
+  =link_to "New Tag", new_tag_path
+  =link_to "logout", destroy_user_session_path, :method => :delete
