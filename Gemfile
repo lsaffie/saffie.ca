@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.19'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -35,7 +35,6 @@ gem 'haml'
 gem 'will_paginate'
 gem 'pony'
 gem 'i18n'
-gem 'mysql'
 gem 'sass'
 gem 'devise'
 gem 'capistrano'
