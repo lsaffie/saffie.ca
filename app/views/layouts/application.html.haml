@@ -8,14 +8,10 @@
     =stylesheet_link_tag 'style'
     %meta{:name => "google-site-verification", :content => "BGlcBbBgep6dkNPO25kRTfY31WdYUk1C-eoClXuG3sI"}
   %body
-    -if user_signed_in?
-      =render :partial => 'layouts/admin_menu.html.haml'
     #header
       =render :partial => 'layouts/header.html.haml'
-      %p.notice
-        =notice
-      %p.alert
-        =alert
+      -if user_signed_in?
+        =render :partial => 'layouts/admin_menu.html.haml'
 
     #container
       #main_content
