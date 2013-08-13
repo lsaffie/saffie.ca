@@ -9,9 +9,9 @@
     %meta{:name => "google-site-verification", :content => "BGlcBbBgep6dkNPO25kRTfY31WdYUk1C-eoClXuG3sI"}
   %body
     #header
-      =render :partial => 'layouts/header.html.haml'
+      =render :partial => 'layouts/header'
       -if user_signed_in?
-        =render :partial => 'layouts/admin_menu.html.haml'
+        =render :partial => 'layouts/admin_menu'
 
     #container
       #main_content
@@ -20,4 +20,4 @@
         .digg_pagination
           =will_paginate(@posts)
       #footer
-        =render :partial => 'layouts/footer.html.haml'
+        =render :partial => 'layouts/footer'
