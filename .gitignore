@@ -8,4 +8,5 @@ mysql2psql.yml
 saffiepg.dump
 config/database.yml
 saffie.mysql
+.sass-cache
 
