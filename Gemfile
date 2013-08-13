@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'sqlite3'
 
 gem 'RedCloth'
 gem 'haml'
@@ -14,6 +13,14 @@ gem 'capistrano'
 gem 'pg'
 gem 'rspec-rails'
 gem 'twitter'
+
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
