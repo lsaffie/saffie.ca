@@ -10,3 +10,6 @@ config/database.yml
 saffie.mysql
 .sass-cache
 
+.project
+.tags
+tags
