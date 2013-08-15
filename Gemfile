@@ -20,6 +20,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'therubyracer'
 end
 
 # Gems used only for assets and not required
@@ -31,4 +32,3 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'therubyracer'
