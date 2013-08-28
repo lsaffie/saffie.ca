@@ -4,7 +4,7 @@
   .date
     =@post.created_at.strftime("%b %d, %Y")
   #post_body
-    =@post.body.html_safe
+    =RedCloth.new(@post.body).to_html
 
 
   %p
