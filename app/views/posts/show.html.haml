@@ -4,7 +4,7 @@
   .date
     =@post.created_at.strftime("%b %d, %Y")
   #post_body
-    =@post.body
+    =@post.body.html_safe
 
 
   %p
