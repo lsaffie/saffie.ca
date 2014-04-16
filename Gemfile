@@ -15,6 +15,7 @@ gem 'capistrano'
 gem 'pg'
 gem 'rspec-rails'
 gem 'twitter'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'pg'
