@@ -17,7 +17,8 @@ common: &default_settings
   # New Relic service.
   #license_key: 'cfa37b3260d4d72cf40bb7aeae68cf6aea0dd96c'
   #license_key: 'a1734e1f426655cadf62df084a55269b6fe386d5'
-  license_key: '8b9fee5c5f31e9126dc73364711e25068c6257b1'
+  #license_key: '8b9fee5c5f31e9126dc73364711e25068c6257b1'
+  license_key: '93e2f0d032e802e16106bb358785a08929a0a36c'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
